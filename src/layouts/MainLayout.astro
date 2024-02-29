@@ -1,0 +1,25 @@
+---
+// component import
+import MainHead from '@components/MainHead.astro'
+import Footer from '@components/Footer.astro'
+import NavBar from '@components/NavBar.astro'
+//import "@fontsource/nunito";
+// style import
+const {
+	title = 'True North Property Services Inc.',
+	description = "True North Property Services Inc: Building Toronto's Future. From renovations to new construction, we are your trusted partner for quality craftsmanship and exceptional service. Let's build something great together.",
+	image,
+	robots
+} = Astro.props
+---
+
+<html data-theme="mytheme" lang="en">
+	<MainHead {title} {description} {image} {robots} />
+	<body class="font-nunito flex min-h-screen flex-col bg-primary"
+		><NavBar />
+		<main>
+			<slot> Default Text</slot>
+		</main>
+		<Footer />
+	</body>
+</html>

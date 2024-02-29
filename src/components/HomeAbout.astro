@@ -1,0 +1,55 @@
+---
+import { Image } from 'astro:assets'
+import imgAbout from '@assets/aboutus-01.jpg'
+---
+
+<section class="container mx-auto px-6 py-4">
+	<!-- Left Side: image -->
+
+	<div class="grid lg:grid-cols-2 lg:gap-6 lg:px-2">
+		<div class="mb-4 mt-4 lg:mb-0">
+			<Image
+				class="mask mask-triangle-4 h-auto max-w-full"
+				src={imgAbout}
+				alt="True North Office"
+				width={853}
+				height={1280}
+				format="avif"
+			/>
+		</div>
+
+		<!--right side -->
+
+		<div class="col-end mt-4 lg:mb-0">
+			<div class="py-4 lg:my-20">
+				<p class="mb-4 text-right font-sans text-3xl font-bold text-white">
+					Find out how we're redefining property care with innovation!
+				</p>
+
+				<div class="mb-4 flex flex-auto px-3">
+					<article class="lg:prose-xl prose">
+						<p>
+							At
+							<span class="font-semibold text-secondary">True North Property Services Inc</span>, we
+							are a team of passionate individuals dedicated to turning your dream home into a
+							reality. Based in Toronto, we specialize in custom home builds that reflect the unique
+							personalities and lifestyles of our clients. Our journey with you begins with
+							understanding your vision, listening to your needs, and working tirelessly to bring
+							every detail to life. With years of experience and expertise in the real estate
+							industry, we pride ourselves on providing unparalleled craftsmanship and quality
+							service throughout every step of the building process. From design concept to final
+							touches, we are committed to creating spaces that not only meet but exceed your
+							expectations. At True North Property Services Inc., we believe that every home should
+							tell a story - let us help you write yours.
+						</p>
+					</article>
+				</div>
+				<div class="px-4">
+					<a role="button" href="/" class="btn btn-secondary btn-wide mb-2 uppercase">
+						Discover now</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

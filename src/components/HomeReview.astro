@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets'
+import imgReview from '@assets/aboutus-02.jpg'
+---
+
+<section class="container mx-auto my-24 px-6 py-4">
+	<div class="grid lg:grid-cols-2 lg:gap-6 lg:px-2">
+		<!-- Left Side: image -->
+
+		<div class="col-end mt-4 lg:mb-0">
+			<div class="py-4 lg:my-20">
+				<p class="mb-4 text-left font-sans text-3xl font-bold text-base-100">
+					A Satisfied Client <span
+						class="icon-[ph--chat-teardrop-text-light]"
+						style="width: 64px; height: 64px; color: white;"></span>
+				</p>
+
+				<div class="mb-4 flex flex-auto px-3">
+					<article class="lg:prose-xl prose">
+						<blockquote>
+							<p>
+								<span class="font-semibold text-secondary"
+									>True North Property Services Inc. exceeded my expectations!</span
+								> From start to finish, the team demonstrated exceptional professionalism and attention
+								to detail. I highly recommend their services to anyone looking for reliable and skilled
+								construction professionals. <br />
+								<br /> Best regards, <br />
+								<br /> Sopia Johnson
+							</p>
+						</blockquote>
+					</article>
+				</div>
+				<div class="rating rating-lg">
+					<input type="radio" name="rating-9" class="rating-hidden" />
+					<input type="radio" name="rating-9" class="mask mask-star-2" />
+					<input type="radio" name="rating-9" class="mask mask-star-2" />
+					<input type="radio" name="rating-9" class="mask mask-star-2" />
+					<input type="radio" name="rating-9" class="mask mask-star-2" />
+					<input type="radio" name="rating-9" class="mask mask-star-2" />
+				</div>
+			</div>
+		</div>
+
+		<!--right side -->
+		<div class="mb-4 mt-4 lg:mb-0">
+			<Image
+				class="mask mask-triangle-3 h-full max-w-full"
+				src={imgReview}
+				alt="True North Office"
+				width={1280}
+				height={719}
+				format="avif"
+			/>
+		</div>
+	</div>
+</section>

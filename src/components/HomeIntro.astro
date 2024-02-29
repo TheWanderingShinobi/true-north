@@ -1,0 +1,122 @@
+---
+// Import the <Image /> component
+import { Image } from 'astro:assets'
+
+// Import a reference to the image itself
+import imgHome from '@assets/custom-home-01.jpg'
+import imgReplace from '@assets/construction-01.jpg'
+import imgMaintenance from '@assets/tools-01.jpg'
+---
+
+<div class="bg-white py-20">
+	<section class="mb-16 text-center text-white">
+		<p class="text-2xl text-secondary">LOOKING TO BUILD TODAY?</p>
+		<h2 class="mb-20 pt-2 text-3xl font-bold text-accent">Custom Home Services</h2>
+
+		<div class="grid lg:grid-cols-3 lg:gap-x-12">
+			<div class="mb-12 lg:mb-0">
+				<div class="block h-full rounded-lg bg-base-100 shadow-lg">
+					<div class="flex justify-center">
+						<div class="-mt-8 inline-block rounded-full bg-primary p-4 shadow-lg">
+							<span class="icon-[ph--warehouse-duotone]" style="width: 64px; height: 64px;"></span>
+						</div>
+					</div>
+					<div class="p-6">
+						<h3 class="mb-4 text-lg font-semibold text-primary">Custom Home Construction</h3>
+						<div class="mb-3 mt-3 flex justify-center rounded-2xl bg-base-100">
+							<Image
+								class="h-auto max-w-full rounded-lg p-3"
+								src={imgHome}
+								alt="toronto roof repairs"
+								width={1280}
+								height={852}
+								format="webp"
+							/>
+						</div>
+						<p class="text-neutral">
+							Create your dream home with our custom home construction services. Our team of
+							experienced professionals will work with you step by step to bring your vision to
+							life. From design to construction, we deliver quality craftsmanship and attention to
+							detail. Build the home you've always wanted with our expert guidance and personalized
+							services.
+						</p>
+						<div class="pt-4">
+							<a role="button" href="/" class="btn btn-secondary btn-wide mb-2 uppercase"
+								>Build My Home</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mb-12 lg:mb-0">
+				<div class="block h-full rounded-lg bg-base-100 shadow-lg">
+					<div class="flex justify-center">
+						<div class="-mt-8 inline-block rounded-full bg-primary p-4 shadow-lg">
+							<span class="icon-[ph--house-duotone]" style="width: 64px; height: 64px;"></span>
+						</div>
+					</div>
+					<div class="p-6">
+						<h3 class="mb-4 text-lg font-semibold text-primary">Renovations and Remodelling</h3>
+						<div class="mb-3 mt-3 flex justify-center bg-base-100">
+							<Image
+								class="rounded-top h-auto max-w-full p-3"
+								src={imgReplace}
+								alt="construction service toronto"
+								width={960}
+								height={640}
+								format="webp"
+							/>
+						</div>
+						<p class="text-neutral">
+							Renovate and revitalize your home with our expert construction services. From small
+							updates to complete remodelings, we have the expertise to bring your dream home to
+							life. transformations, we bring your vision to life with quality craftsmanship and
+							exceptional service. Let use elevate your property to new heights. and create a space
+							that exceeds your expectations.
+						</p>
+						<div class="pt-4">
+							<a role="button" href="/" class="btn btn-secondary btn-wide mb-2 uppercase"
+								>Learn More</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="">
+				<div class="block h-full rounded-lg bg-base-100 shadow-lg">
+					<div class="flex justify-center">
+						<div class="-mt-8 inline-block rounded-full bg-primary p-4 shadow-lg">
+							<span class="icon-[ph--hammer-bold]" style="width: 64px; height: 64px;"></span>
+						</div>
+					</div>
+					<div class="p-6">
+						<h3 class="mb-4 text-lg font-semibold text-primary">Upgrades and Maintenance</h3>
+						<div class="mb-3 mt-3 flex justify-center bg-base-100">
+							<Image
+								class="rounded-top h-auto max-w-full p-3"
+								src={imgMaintenance}
+								alt="maintenance tools"
+								width={1280}
+								height={853}
+								format="avif"
+							/>
+						</div>
+						<p class="text-neutral">
+							New upgrades and maintenance services to keep your home in tip-top shape. Our team
+							delivers top-quality workmanship, innovative design, and on-time project completion.
+							Trust us to bring your dream home to life with our expert project management and
+							superior construction expertise.
+						</p>
+						<div class="pt-4">
+							<a role="button" href="/" class="btn btn-secondary btn-wide mb-2 uppercase"
+								>More Info</a
+							>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</div>
