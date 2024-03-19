@@ -1,9 +1,10 @@
 ---
 // component import
+import '@fontsource/poppins'
 import MainHead from '@components/MainHead.astro'
 import Footer from '@components/Footer.astro'
 import NavBar from '@components/NavBar.astro'
-//import "@fontsource/nunito";
+
 // style import
 const {
 	title = 'True North Property Services Inc.',
@@ -15,7 +16,7 @@ const {
 
 <html data-theme="mytheme" lang="en">
 	<MainHead {title} {description} {image} {robots} />
-	<body class="font-nunito flex min-h-screen flex-col bg-primary"
+	<body class="flex min-h-screen flex-col bg-primary font-sans"
 		><NavBar />
 		<main>
 			<slot> Default Text</slot>

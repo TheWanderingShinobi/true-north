@@ -1,0 +1,22 @@
+---
+import { Image } from 'astro:assets'
+import imgHero from '@assets/about-us-hero.jpg'
+---
+
+<div class="hero min-h-screen bg-primary">
+	<div class="hero-content flex-col lg:flex-row">
+		<Image
+			src={imgHero}
+			alt="About Us Hero Image"
+			width={1280}
+			height={721}
+			format="avif"
+			class="max-w-sm rounded-lg shadow-2xl"
+		/>
+		<div class="text-center lg:text-left">
+			<h1 class="text-5xl font-bold text-secondary">True North Property Services Inc.</h1>
+			<p class="items-center py-6 text-2xl text-white">Get to Know Our Mission and Values!</p>
+			<a href="/" class="btn btn-secondary btn-wide">Get Started</a>
+		</div>
+	</div>
+</div>

@@ -10,9 +10,7 @@ import myLogo from '@assets/trueNorth.png'
 
 	<div class="grid divide-accent lg:grid-cols-2 lg:gap-6 lg:divide-x lg:px-2">
 		<div class="mb-4 mt-4 lg:mb-0">
-			<p class="font-sans-serif mb-4 text-center text-6xl font-extrabold text-base-100">
-				Contact Us
-			</p>
+			<p class="mb-4 text-center font-sans text-6xl font-extrabold text-secondary">Contact Us</p>
 			<div>
 				<form method="POST" action="https://api.web3forms.com/submit">
 					<input type="hidden" name="access_key" value="a4e44ece-4a17-415f-84a1-73716b35b94a" />
@@ -68,12 +66,19 @@ import myLogo from '@assets/trueNorth.png'
 
 		<!--right side -->
 
-		<div class="mt-4 lg:mb-0">
+		<div class="mt-4 text-white lg:mb-0">
 			<div class="py-4">
 				<div class="mb-4 flex justify-center p-4">
-					<Image class="item-center" src={myLogo} format="webp" alt="This is the company logo" />
+					<Image
+						class="item-center"
+						src={myLogo}
+						format="webp"
+						alt="This is the company logo"
+						width={500}
+						height={500}
+					/>
 				</div>
-				<div class="mb-4 flex flex-auto px-3 text-black lg:py-4">
+				<div class="mb-4 flex flex-auto px-3 text-white lg:py-4">
 					<p>
 						Don't let property maintenance stress burden you any longer - True North Property
 						Services Inc. is your reliable solution in Toronto! Contact us now to schedule a
@@ -84,7 +89,7 @@ import myLogo from '@assets/trueNorth.png'
 				</div>
 				<div class="px-4">
 					<p
-						class="text-md mb-4 flex justify-center font-semibold uppercase text-base-100 md:justify-start"
+						class="text-md mb-4 flex justify-center font-semibold uppercase text-neutral md:justify-start"
 					>
 						Contact
 					</p>

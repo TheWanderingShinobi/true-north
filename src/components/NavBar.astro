@@ -5,7 +5,7 @@ import { Image } from 'astro:assets'
 import myLogo from '@assets/trueNorth.png'
 ---
 
-<div class="navbar sticky top-0 z-[1] bg-base-100">
+<div class="navbar sticky top-0 z-[1] bg-primary">
 	<div class="navbar-start">
 		<div class="dropdown">
 			<div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -30,8 +30,9 @@ import myLogo from '@assets/trueNorth.png'
 				<li>
 					<a>Services</a>
 					<ul class="p-2">
-						<li><a>Roofing</a></li>
-						<li><a>Window Cleaning</a></li>
+						<li><a href="https://innovative-roofing.com/">Roofing</a></li>
+						<li><a href="https://theprofessionalswindowcleaning.com/">Window Cleaning</a></li>
+						<li><a href="https://theprofessionalswindowcleaning.com/">Eavestrough Cleaning</a></li>
 					</ul>
 				</li>
 				<li><a>About Us</a></li>
@@ -39,28 +40,29 @@ import myLogo from '@assets/trueNorth.png'
 		</div>
 		<a href="/">
 			<Image
-				class="item-center"
+				class="item-center rounded-full"
 				src={myLogo}
 				format="avif"
-				width="160"
-				height="112"
+				width="200"
+				height="200"
 				alt="This is the company logo"
 			/>
 		</a>
 	</div>
 	<div class="navbar-center hidden lg:flex">
-		<ul class="menu menu-horizontal px-1">
+		<ul class="menu menu-horizontal px-1 text-xl font-bold text-neutral">
 			<li><a href="/">Home</a></li>
 			<li>
 				<details>
 					<summary>Services</summary>
 					<ul class="p-1">
-						<li><a href="/">Roofing</a></li>
-						<li><a href="/">Window Cleaning</a></li>
+						<li><a href="https://innovative-roofing.com/">Roofing</a></li>
+						<li><a href="https://theprofessionalswindowcleaning.com/">Window Cleaning</a></li>
+						<li><a href="https://theprofessionalswindowcleaning.com/">Eavestrough Cleaning</a></li>
 					</ul>
 				</details>
 			</li>
-			<li><a href="/">About Us</a></li>
+			<li><a href="about-us">About Us</a></li>
 		</ul>
 	</div>
 	<div class="navbar-end">
