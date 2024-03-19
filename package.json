@@ -16,7 +16,6 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fontsource/poppins": "^5.0.12",
     "astro": "^4.4.0",
-    "astro-compress": "^2.2.15",
     "astro-critters": "^2.1.4",
     "astro-robots-txt": "^1.0.0",
     "prettier": "^3.2.5",
