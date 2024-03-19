@@ -1,9 +1,14 @@
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
+import critters from 'astro-critters';
+import sitemap from '@astrojs/sitemap';
+import robotsTxt from "astro-robots-txt";
+import partytown from "@astrojs/partytown";
 
-import critters from "astro-critters";
+import compress from "astro-compress";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), critters()]
+  site: 'https://truenorthpropertyservices.ca',
+  integrations: [tailwind(), critters(), sitemap(), robotsTxt(), partytown(), compress()]
 });
