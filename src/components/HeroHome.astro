@@ -1,6 +1,4 @@
----
-import { fade } from 'astro:transitions'
----
+
 
 <style>
 	/* Style for overlay */
@@ -16,7 +14,6 @@ import { fade } from 'astro:transitions'
 	<iframe
 		class="absolute inset-0 h-full w-full"
 		src="https://www.youtube.com/embed/xZAis02VSuA?autoplay=1&mute=1&loop=1&controls=0"
-		frameborder="0"
 		allowfullscreen
 		allow="autoplay"></iframe>
 	<!-- Overlay for Call to Action -->
@@ -24,13 +21,13 @@ import { fade } from 'astro:transitions'
 		<!-- Call to Action Content -->
 		<div class="text-center text-white">
 			<h1
-				transition:animate={fade({ duration: '0.4s' })}
+				
 				class="mb-4 text-4xl font-bold text-secondary lg:text-6xl"
 			>
 				True North Property Services Inc.
 			</h1>
 			<p class="mb-8 text-lg">Building Toronto's Future</p>
-			<a href="tel:416-786-7091" class="btn btn-primary btn-wide">CALL US TODAY</a>
+			<a href="tel:647-507-5014" class="btn btn-primary btn-wide">CALL US TODAY</a>
 		</div>
 	</div>
 </section>

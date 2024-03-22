@@ -28,6 +28,6 @@
     "@iconify-json/ph": "^1.1.11",
     "@iconify/tailwind": "^0.1.4",
     "@tailwindcss/typography": "^0.5.10",
-    "daisyui": "^4.7.2"
+    "daisyui": "^3.9.4"
   }
 }
